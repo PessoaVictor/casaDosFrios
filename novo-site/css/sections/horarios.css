@@ -1,0 +1,51 @@
+.horarios {
+    padding: 60px 0;
+    background: var(--light-color);
+}
+
+.horarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.horario-card {
+    background: var(--white);
+    padding: 40px 32px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+}
+
+.horario-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.horario-icon {
+    color: var(--primary-color);
+    margin-bottom: 24px;
+}
+
+.horario-card h3 {
+    font-family: var(--font-display);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.horario-card p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.horario-card a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.horario-card a:hover {
+    text-decoration: underline;
+}
